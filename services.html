@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - My Website</title>
+  <title>Services - My Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -35,6 +35,19 @@
       padding: 20px;
       text-align: center;
     }
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .service-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+    }
     footer {
       background: #333;
       color: white;
@@ -47,7 +60,7 @@
 <body>
 
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Our Services</h1>
   </header>
 
   <nav>
@@ -57,8 +70,21 @@
   </nav>
 
   <main>
-    <h2>About Us</h2>
-    <p>This is the home page of our simple website. You can navigate to the Services and Contact pages.</p>
+    <h2>What We Offer</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Web Development</h3>
+        <p>We build fast and modern websites tailored to your business needs.</p>
+      </div>
+      <div class="service-box">
+        <h3>Mobile Apps</h3>
+        <p>Custom mobile applications for both Android and iOS platforms.</p>
+      </div>
+      <div class="service-box">
+        <h3>SEO & Marketing</h3>
+        <p>Boost your online presence with our SEO and digital marketing services.</p>
+      </div>
+    </div>
   </main>
 
   <footer>
